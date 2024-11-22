@@ -13,5 +13,6 @@ public class AddressClient {
         address.zipCode = "22012";
 
         System.out.println(address);
+        System.out.println();
     }
 }
