@@ -1,5 +1,8 @@
 package day10_practice_tasks_arraylist;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class RemoveLetters {
 
     /*
@@ -16,4 +19,14 @@ public class RemoveLetters {
     //removeall ve wrapperdaki isLetter kullanmaya calis
 
 
+    public static void main(String[] args) {
+        ArrayList<Character> list = new ArrayList<>(Arrays.asList('$', 'A', 'B', '1', '2', 'c', 'd', '@', '!', '3', '4'));
+
+
+        System.out.println(list);
+
+        list.removeIf(Character::isLetter);//shortcut method reference olarakta geciyormus
+        System.out.println(list);
+
+    }
 }
