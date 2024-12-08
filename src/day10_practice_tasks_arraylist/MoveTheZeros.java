@@ -24,5 +24,8 @@ public class MoveTheZeros {
 
         Collections.rotate(list, -4);
         System.out.println(list);
+
+        
+
     }
 }
