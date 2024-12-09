@@ -1,5 +1,8 @@
 package day10_practice_tasks_arraylist;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class CombineTwoArrays {
 
     /*
@@ -15,8 +18,31 @@ public class CombineTwoArrays {
      */
     public static void main(String[] args) {
 
-        String[] arr1 = {"A","B","C"};
-        String[] arr2 = {"D","E","F","G"};
+        String[] arr1 = {"A", "B", "C"};
+        String[] arr2 = {"D", "E", "F", "G"};
+
+        ArrayList<String> combined = new ArrayList<>();
+
+        combined.addAll(Arrays.asList(arr1));
+        combined.addAll(Arrays.asList(arr2));
+
+        System.out.println(combined);
+
+        //opt 2
+
+        ArrayList<String> combined2 = new ArrayList<>();
+
+        int totallen = arr1.length + arr2.length; //total iteration
+
+        for (int i = 0; i < totallen; i++) {
+            if (i<arr1.length){
+                combined2.add(arr1[i]);
+            }else {
+                combined2.add(arr2[i - arr1.length]);
+            }
+
+        }
+
 
 
     }
