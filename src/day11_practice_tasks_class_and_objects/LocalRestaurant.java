@@ -117,13 +117,14 @@ public class LocalRestaurant {
         Server server1 = new Server("Alice", 101, 15.50, true);
         Server server2 = new Server("Bob", 102, 14.00, false);
         Server server3 = new Server("Charlie", 103, 13.75, true);
+        Server server4 = new Server("Charlie", 103, 13.75, true);
 
         // Create Chefs
         Chef chef1 = new Chef("David", 201, 20.00, true);
         Chef chef2 = new Chef("Eve", 202, 22.50, false);
 
         // Add Servers and Chefs to Restaurant
-        restaurant.hireServer(new Server[]{server1, server2, server3});
+        restaurant.hireServer(new Server[]{server1, server2, server3,server4});
         restaurant.hireChef(new Chef[]{chef1, chef2});
 
         // Print Restaurant Info
