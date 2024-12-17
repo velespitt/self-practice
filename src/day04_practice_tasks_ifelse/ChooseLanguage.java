@@ -21,19 +21,16 @@ the selection and prints the following message:
 				  Merhaba, aradiginiz icin tesekkurler
          */
         int num = 6;
-        if(num==1){
-            System.out.println("selection = "+ num +"\nHello,thanks you for your call");
-        } else if (num==2)
-        {
-            System.out.println("selection = "+ num +"\nHola, gracias por llamar");
-        } else if (num==3) {
-            System.out.println("selection = "+ num +"\nMerhaba, aradığınız için teşekkürler");
-        } else if (num ==4) {
-            System.out.println("selection = "+ num +"\nПривет, спасибо за ваш звонок");
-        }
-        else if (num ==5){
-            System.out.println("selection = "+ num +"\nMerci, pour votre appel");
-        }
-        else System.out.println("Invalid selection");
+        if (num == 1) {
+            System.out.println("selection = " + num + "\nHello,thanks you for your call");
+        } else if (num == 2) {
+            System.out.println("selection = " + num + "\nHola, gracias por llamar");
+        } else if (num == 3) {
+            System.out.println("selection = " + num + "\nMerhaba, aradığınız için teşekkürler");
+        } else if (num == 4) {
+            System.out.println("selection = " + num + "\nПривет, спасибо за ваш звонок");
+        } else if (num == 5) {
+            System.out.println("selection = " + num + "\nMerci, pour votre appel");
+        } else System.out.println("Invalid selection");
     }
 }

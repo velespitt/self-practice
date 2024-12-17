@@ -21,6 +21,18 @@ public class Item {
     }
 
     public void setName(String name) {
+//        tek if ile iceride atama yapmak icin butun kosullar dogrulanmali o yuzden ve kullaniyoruz.
+//        // Geçerli koşulları kontrol et
+//        if (name != null && !name.isBlank() && Character.isLetter(name.charAt(0)) &&
+//                name.chars().allMatch(c -> Character.isLetterOrDigit(c) || Character.isSpaceChar(c))) {
+//
+//            // Eğer koşullar sağlanırsa, atama yapılır
+//            this.name = name;
+//        } else {
+//            System.err.println("Invalid name. It must not be null/blank, must start with a letter, " +
+//                    "and can only contain letters, digits, or spaces.");
+//        }
+//    }
         if (name == null || name.isBlank()) {
             System.err.println("Name cannot be null or blank.");
             return;
@@ -38,9 +50,11 @@ public class Item {
             return;
         }
 
-//        tek if
-//        if (name == null || name.isBlank() || !Character.isLetter(name.charAt(0)) ||
-//                name.chars().anyMatch(c -> !Character.isLetterOrDigit(c) && !Character.isSpaceChar(c))) {
+        this.name = name;
+
+//        tek if ile disarida atama yapmak
+//        if (name != null || !name.isBlank() || Character.isLetter(name.charAt(0)) ||
+//                name.chars().anyMatch(c -> Character.isLetterOrDigit(c) && Character.isSpaceChar(c))) {
 //
 //            System.err.println("Invalid name. It must not be null/blank, must start with a letter, " +
 //                    "and can only contain letters, digits, or spaces.");
