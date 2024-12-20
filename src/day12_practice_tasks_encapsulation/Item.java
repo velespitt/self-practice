@@ -21,6 +21,8 @@ public class Item {
     }
 
     public void setName(String name) {
+
+
 //        tek if ile iceride atama yapmak icin butun kosullar dogrulanmali o yuzden ve kullaniyoruz.
 //        // Geçerli koşulları kontrol et
 //        if (name != null && !name.isBlank() && Character.isLetter(name.charAt(0)) &&

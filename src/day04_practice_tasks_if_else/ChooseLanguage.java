@@ -1,4 +1,4 @@
-package day04_practice_tasks_ifelse;
+package day04_practice_tasks_if_else;
 
 public class ChooseLanguage {
     public static void main(String[] args) {
