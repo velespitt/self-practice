@@ -65,6 +65,8 @@ class EmployeeClient {
 
         Person person = new Person("Ahmet", 26);
         System.out.println(person);
+        person.eat();
+        person.sleep();
 
         Employee employee = new Employee("Yusuf",26);
         System.out.println(employee);
