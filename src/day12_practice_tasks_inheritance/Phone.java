@@ -39,7 +39,7 @@ public class Phone {
     }
 
     public void setModel(String model) {
-        if (model == null || model.isBlank() || model.isEmpty()) {
+        if (model == null || model.isBlank()) {
             System.err.println("Model cannot be null/empty.");
         } else this.model = model;
 
@@ -63,14 +63,14 @@ public class Phone {
     }
 
     public String getColor() {
-        if (color == null || color.trim().isBlank()) {
+        if (color == null || color.trim().isEmpty()) {
             System.err.println("Color cannot be null/empty.");
         }
         return color;
     }
 
     public void setColor(String color) {
-        if (color == null || color.trim().isBlank()) {
+        if (color == null || color.trim().isEmpty()) {
             return;
         }
         this.color = color;
