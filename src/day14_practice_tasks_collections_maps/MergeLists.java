@@ -16,24 +16,7 @@ import java.util.LinkedHashSet;
          Output:
             list3 = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100}
 
-            /*
 
-        for (String s : array1) {
-
-            list.add(s);
-        }
-
-        for (String s : array2) {
-            list.add(s);
-        }
-
-
-
-list.addAll(Arrays.asList(array1));
-        list.addAll(Arrays.asList(array2));
-
-
-        return list;
  */
 public class MergeLists {
 
