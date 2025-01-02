@@ -1,6 +1,5 @@
 package day14_practice_tasks_collections_maps;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class DifferenceBetweenTwoSets {
