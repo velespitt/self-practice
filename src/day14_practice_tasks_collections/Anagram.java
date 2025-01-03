@@ -1,4 +1,4 @@
-package day14_practice_tasks_collections_maps;
+package day14_practice_tasks_collections;
 
 
 import java.util.*;
